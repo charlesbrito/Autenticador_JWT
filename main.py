@@ -27,3 +27,4 @@ async def user(user: user_dependency, db:db_dependency):
     if user is None:
         raise HTTPException(status_code=401, detail='A autenticação falhou')
     return {"user": user}
+
