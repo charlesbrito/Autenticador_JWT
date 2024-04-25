@@ -28,3 +28,4 @@ async def user(user: user_dependency, db:db_dependency):
         raise HTTPException(status_code=401, detail='A autenticação falhou')
     return {"user": user}
 
+
